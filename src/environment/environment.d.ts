@@ -2,6 +2,7 @@ declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
 			NODE_LOCAL_PORT: number
+			NODE_DOCKER_PORT: number
 			DB_HOST: string
 			DB_PORT: number
 			DB_USER: string
