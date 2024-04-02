@@ -17,4 +17,14 @@ module.exports = {
 		},
 	],
 	root: true,
+	rules: {
+		'@typescript-eslint/no-misused-promises': [
+			2,
+			{
+				checksVoidReturn: {
+					arguments: false,
+				},
+			},
+		],
+	},
 }
