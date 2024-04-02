@@ -1,6 +1,6 @@
 # Files Service
 
-Project was created as a solution for a task for a job. It has code which contains ways to implement authorization using OAUTH 2.0. And REST API to interact with files
+Project was created as a solution for a task for a job. It has code which contains ways to implement authorization and REST API to interact with files
 
 ## Setting up project
 
@@ -18,6 +18,7 @@ $ npm i
 | Field           | Type   | Description                                                        |
 | --------------- | ------ | ------------------------------------------------------------------ |
 | NODE_LOCAL_PORT | number | Port which you want to use for application (3000 is default value) |
+| JWT_SECRET      | string | Secret which will be user for creatrion of JWT tokens              |
 | DB_HOST         | string | Host of your database                                              |
 | DB_PORT         | number | Port of your database                                              |
 | DB_USER         | string | User to interact with your database                                |
@@ -41,6 +42,7 @@ $ npm run start
 | --------------------- | ------ | ------------------------------------------------------------------ |
 | NODE_LOCAL_PORT       | number | Port which you want to use for application (3000 is default value) |
 | NODE_DOCKER_PORT      | number | Port which docker container should use for application             |
+| JWT_SECRET            | string | Secret which will be user for creatrion of JWT tokens              |
 | MYSQLDB_HOST          | string | Host of your database                                              |
 | MYSQLDB_USER          | string | User to interact with your database                                |
 | MYSQLDB_ROOT_PASSWORD | string | Password for this user                                             |
