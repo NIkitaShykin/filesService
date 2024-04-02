@@ -21,11 +21,7 @@ UserRouter.post(
 	handleValidationErrors,
 	registerUser
 )
-UserRouter.get(
-	'/info',
-	authMiddleware,
-	getUser
-)
+UserRouter.get('/info', authMiddleware, getUser)
 UserRouter.post('/signin', loginValidator, handleValidationErrors, login)
 UserRouter.post('/signin/new_token', refreshTokens)
 UserRouter.get('/logout', authMiddleware, logout)
